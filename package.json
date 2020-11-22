@@ -8,11 +8,13 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always",
     "release": "build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiicode/pingo.git"
+    "url": "https://github.com/fiicode/pingo.git"
   },
   "author": "Abbackr",
   "license": "CC0-1.0",
